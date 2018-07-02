@@ -2,9 +2,6 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-<<<<<<< HEAD
-<<<<<<< HEAD
-         :recoverable, :rememberable, :trackable, :validatable,
 
     #For the facebook authenticator
     def self.from_omniauth(auth)
@@ -14,7 +11,3 @@ class User < ApplicationRecord
 
       end
     end
-=======
-         :recoverable, :rememberable, :trackable, :validatable
-end
->>>>>>> parent of 866def3... facebook authenticator feature
