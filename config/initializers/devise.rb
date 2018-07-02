@@ -283,9 +283,12 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    config.omniauth :facebook, "2085893168400053", "6c7a366789f31cd44cf597b866767abc"
 =======
 >>>>>>> parent of 866def3... facebook authenticator feature
 =======
 >>>>>>> parent of 866def3... facebook authenticator feature
+=======
+>>>>>>> parent of 8a9cffc... Revert "facebook authenticator feature"
 end

@@ -4,9 +4,18 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   :recoverable, :rememberable, :trackable, :validatable, :omniauthable, omniauth_providers: %i[facebook]
+=======
+>>>>>>> parent of 8a9cffc... Revert "facebook authenticator feature"
 
+    #For the facebook authenticator
+    def self.from_omniauth(auth)
+      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0,20]
 
+<<<<<<< HEAD
   def self.from_omniauth(auth)
 where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
 user.email = auth.info.email
@@ -24,3 +33,7 @@ end
          :recoverable, :rememberable, :trackable, :validatable
 >>>>>>> parent of 866def3... facebook authenticator feature
 end
+=======
+      end
+    end
+>>>>>>> parent of 8a9cffc... Revert "facebook authenticator feature"
