@@ -1,2 +1,7 @@
 <h1>Home#page</h1>
 <p>Find me in app/views/home/page.html.erb</p>
+<li class="nav-item">
+        <%= link_to destroy_user_session_path, class: "nav-link", :title => "Log Out", method: :delete do %>
+         <i class="far fa-user navicon" ></i>
+        <% end %>
+        
