@@ -3,6 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
 <<<<<<< HEAD
+<<<<<<< HEAD
   :recoverable, :rememberable, :trackable, :validatable, :omniauthable, omniauth_providers: %i[facebook]
 
 
@@ -16,6 +17,9 @@ user.password = Devise.friendly_token[0,20]
 # uncomment the line below to skip the confirmation emails.
 # user.skip_confirmation!
 end
+=======
+         :recoverable, :rememberable, :trackable, :validatable
+>>>>>>> parent of 866def3... facebook authenticator feature
 =======
          :recoverable, :rememberable, :trackable, :validatable
 >>>>>>> parent of 866def3... facebook authenticator feature
